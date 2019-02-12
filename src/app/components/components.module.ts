@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { MobxAngularModule } from 'mobx-angular';
 import { ExampleComponent } from './example/example.component';
 
 @NgModule({
@@ -9,6 +10,7 @@ import { ExampleComponent } from './example/example.component';
     imports: [
         // Angular + Externals
         CommonModule,
+        MobxAngularModule,
 
         // Application
         // /!\ Should not import any Application Module, for lazy loading purpose /!\

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MobxAngularModule } from 'mobx-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -11,6 +12,7 @@ import { AppComponent } from './app.component';
     imports: [
         // Angular + Externals
         BrowserModule.withServerTransition({ appId: 'boilerplate-angular-ssr-ll' }),
+        MobxAngularModule,
 
         // Application
         AppRoutingModule
