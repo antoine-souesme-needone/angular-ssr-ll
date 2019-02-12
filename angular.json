@@ -71,6 +71,12 @@
                                     "type": "initial",
                                     "maximumWarning": "2mb",
                                     "maximumError": "5mb"
+                                },
+                                {
+                                    "type": "bundle",
+                                    "name": "main",
+                                    "maximumWarning": "500kb",
+                                    "maximumError": "1mb"
                                 }
                             ]
                         }
