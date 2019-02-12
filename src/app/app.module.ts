@@ -9,8 +9,17 @@ import { AppComponent } from './app.component';
         AppComponent
     ],
     imports: [
+        // Angular + Externals
         BrowserModule.withServerTransition({ appId: 'boilerplate-angular-ssr-ll' }),
+
+        // Application
         AppRoutingModule
+
+        /**
+         * Keep in mind that Application modules (shared.module or components.module) imported here
+         * are only meant to be used in app.component.ts.
+         * Everything else is lazy loaded.
+         */
     ],
     providers: [],
     bootstrap: [AppComponent]
